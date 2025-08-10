@@ -1,0 +1,41 @@
+{
+  "name": "cursor-ai-plugin",
+  "displayName": "My AI Assistant",
+  "description": "An AI assistant for Cursor, like Continue",
+  "publisher": "Continue",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0",
+    "cursor": "^1.0.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:cursorAiPlugin.openChat",
+    "onView:cursorAiSidebar"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorAiPlugin.openChat",
+        "title": "Open AI Chat"
+      }
+    ],
+    "views": {
+      "sidebar": [
+        {
+          "id": "cursorAiSidebar",
+          "name": "AI Assistant"
+        }
+      ]
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "cursorAiPlugin.openChat",
+          "when": "true"
+        }
+      ]
+    }
+  }
+}
