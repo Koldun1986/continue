@@ -2,6 +2,7 @@
   "name": "cursor-ai-plugin",
   "displayName": "My AI Assistant",
   "description": "An AI assistant for Cursor, like Continue",
+  "keywords": ["cursor", "ai", "continue"]
   "publisher": "Continue",
   "version": "0.0.1",
   "engines": {
